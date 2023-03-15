@@ -3,7 +3,6 @@ export default httpClient => ({
     const response = await httpClient.get('/users/me')
 
     const data = await response.data
-
     if (!data) {
       const errors = {
         status: response.status,
